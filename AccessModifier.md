@@ -8,5 +8,6 @@ References
 ![Accessmodifier Venn Diagram](Accessmodifier_VennDiagram.png "Accessmodifier Venn Diagram") <br>
 
 
+## Note
 1. namespace 에는 access modifier 를 사용할 수 없다. namespace 는 access 제한이 없음
 1. nested type 이 아닌 top-level type 인 경우, ```internal``` 또는 ```public``` 만 사용 가능. default 는 ```internal```
