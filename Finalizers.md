@@ -27,10 +27,10 @@ GC가 class instance 를 수집할 때 꼭 필요한 final cleanup 작업을 하
         }
    }
    ```
-2. finalizer 는 내부적으로 base class의 Finalize를 호출 => base class 에 Finalize 를 무조건 선언해야 하나?
+2. finalizer 는 내부적으로 base class의 Finalize를 호출하는데, 위의 코드는 결국 아래와 같다. => base class 에 Finalize 를 무조건 선언해야 하나?
 
     ```c#
-    protected override void Finalize()
+    protected override void Finalize():w
     {
         try
         {
